@@ -1,0 +1,7 @@
+<section>
+    <div>
+        <h3>General room  <button (click)="onLogout()" class="btn btn-danger text-lgr">Logout</button></h3>
+    </div>
+    <app-all-chat [chats]="chats"></app-all-chat>
+<app-send-chat (triggerSendChat)="onSendChat($event)" [activeUser]="user" [roomId]="35"></app-send-chat>
+</section>
